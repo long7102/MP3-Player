@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  html {
+    color: #333;
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+  }
+  .volume{
+    position: absolute;
+    z-index: 7;
+    top: 20px;
+    left: 25px;
+    color: whitesmoke;
+  }
+  .volume i{
+    font-size: 40px;
+    margin-bottom: 25px;
+    cursor: pointer;
+  }
+  .main {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    z-index: -1;
+  }
+  .form {
+    display: block;
+    backdrop-filter: blur(3px);
+    z-index: 7;
+    width: 500px;
+    height: 350px;
+    min-height: 270px;
+    padding: 32px 27px;
+    text-align: center;
+    background-color: rgba(231, 215, 215, 0);
+    border-radius: 7px;
+    margin: 24px;
+    align-self: center;
+    box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.75);
+    border: 1.5px solid rgb(109 75 75);
+    animation: start ease-in .7s;
+  }
+  @keyframes start {
+    0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+  }
+  .form .heading {
+    font-size: 2rem;
+    color: white;
+  }
+  .form .desc {
+    color: white;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: lighter;
+    line-height: 2.4rem;
+    margin-top: 16px;
+    font-weight: 300;
+  }
+  
+  .form-group {
+    display: flex;
+    margin-bottom: 16px;
+    flex-direction: column;
+  }
+  
+  .form-label,
+  .form-message {
+    text-align: left;
+  }
+  
+  .form-label {
+    font-weight: 700;
+    padding-bottom: 6px;
+    line-height: 1.8rem;
+    font-size: 1.4rem;
+  }
+  
+  .form-control {
+    height: 40px;
+    padding: 8px 12px;
+    border: 2px solid #662d91;
+    border-radius: 3px;
+    outline: none;
+    font-size: 1.4rem;
+  }
+  
+  .form-control:hover {
+    border-color: #1dbfaf;
+  }
+  
+  .form-group.invalid .form-control {
+    border-color: #f33a58;
+  }
+  
+  .form-group.invalid .form-message {
+    color: #f33a58;
+  }
+  
+  .form-message {
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 4px 0 0;
+  }
+  
+  .form-submit {
+    outline: none;
+    background-color: #4B0082;
+    margin-top: 12px;
+    padding: 12px 16px;
+    font-weight: 600;
+    color: whitesmoke;
+    border: none;
+    width: 100%;
+    font-size: 14px;
+    border-radius: 8px;
+    cursor: pointer;
+    
+  }
+  
+  .form-submit:hover {
+    background-color: #DDA0DD;
+    opacity: 0.8;
+  }
+  .spacer {
+    margin-top: 36px;
+  }
+  .video-background {
+    z-index: -7;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Điều này đảm bảo video che phủ toàn bộ container */
+    overflow: hidden;
+  }  
+  .custom-checkbox {
+    width: 20px; /* Đặt kích thước tùy chỉnh cho checkbox */
+    height: 20px; /* Đặt kích thước tùy chỉnh cho checkbox */
+    background-color: #fff;
+    border: 2px solid #000;
+    cursor: pointer;
+    position: relative;
+}
+.custom-checkbox:checked::before {
+    content: "";
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    width: 14px; /* Điều chỉnh kích thước để vừa với checkbox */
+    height: 14px; /* Điều chỉnh kích thước để vừa với checkbox */
+    background-color: purple;
+}
+.form-group input:focus{
+  border-color: purple;
+  border-width: 4px;
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuẩn bị tiến đến bất ngờ</title>
+    <link rel="shortcut icon" href="./asset/image/icon.jpg">
+    <link rel="stylesheet" href="./asset/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <div class="volume">
+        <i class="fa-solid fa-volume-high" id="muted"></i>
+        <br>
+        <i class="fa-solid fa-eye" id="display"></i>
+    </div>
+    <div class="main">       
+        <video autoplay loop class="video-background">
+            <source src="./Anime Aesthetic 4K.mp4">
+        </video>
+        <form class="form" id="form-1">
+            <h3 class="heading">Chào người may mắn nhất hôm nay</h3>
+            <p class="desc">Hãy dùng những gì đã được cho nhé ❤️</p>
+            <div class="spacer"></div>
+            <div class="form-group">
+                <input id="fullname" name="fullname" type="text" placeholder="Nhập nickname thật cool"
+                    class="form-control">
+                <span class="form-message"></span>
+            </div>
+            <div class="form-group">   
+                <input id="password" name="password" type="password" placeholder="Nhập mật khẩu" class="form-control">
+                <span class="form-message"></span>
+            </div>
+            <div style="display: flex">
+                <input type="checkbox" placeholder="" class="custom-checkbox" onclick="showPassword()">  
+                 <p style="color: white; 
+                 margin-left: 10px;
+                 text-align: center;
+                 font-size: 1.4rem;
+                 font-weight: lighter;
+                 line-height: 2.4rem;
+                 font-weight: 300;">Nhấn vào đây nếu bạn đần đến mức không nhớ mình vừa nhập gì</p>
+            </div>
+
+            <button class="form-submit" type="button" onclick="validateForm()">Tiến tới bất ngờ nào</button>
+        </form>
+    </div>
+</body>
+<script>
+    function validateForm() {
+  const username = document.getElementById("fullname").value;
+  const password = document.getElementById("password").value;
+
+  if (username === "mai" && password === "29042005") {
+    // Chuyển sang trang tiếp theo
+    alert("Đúng trap girl rồi hehe, chuẩn bị đến với bất ngờ nè");
+    window.location.href = "./main.html";
+  } else {
+    // Hiển thị thông báo lỗi và yêu cầu nhập lại
+    alert("Đần quá thì đọc lại cho nhớ tài khoản mật khẩu đi ạ");
+    const errorMessage = document.getElementById("errorMessage");
+    errorMessage.style.display = "block";
+  }
+}
+const video = document.querySelector('.video-background')
+const muted = document.getElementById('muted')
+video.controls = false
+muted.onclick = function() {
+    if(video.muted){
+        video.muted = false
+        muted.classList.remove('fa-volume-xmark')
+        muted.classList.add('fa-volume-high')
+    }
+    else{
+        video.muted = true
+        muted.classList.remove('fa-volume-high')
+        muted.classList.add('fa-volume-xmark')
+    }
+}
+video.ended = function() {
+    video.currentime = 0
+    video.play()
+}
+const display = document.querySelector('#display')
+const form = document.querySelector('.form')
+display.onclick = function(){
+    if(form.style.display == 'block'){
+        display.classList.remove('fa-eye')
+        display.classList.add('fa-eye-slash')
+        form.style.display = 'none'
+    }
+    else{
+        display.classList.remove('fa-eye-slash')
+        display.classList.add('fa-eye')
+        form.style.display = 'block'
+    }
+}
+function showPassword() {
+    const password = document.getElementById("password");
+    if (password.type === "password") {
+        password.type = "text";
+    } else {
+        password.type = "password";
+    }
+}
+
+</script>
+
+</html>

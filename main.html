@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="shortcut icon" href="./asset/image/icon.jpg">
+    <title>MP3 Player For Trap girl</title>
+    <script src="https://kit.fontawesome.com/05cacd1f06.js" crossorigin="anonymous"></script> 
+</head>
+<body>
+    <aside>
+        <div class="logo-header">
+            <a href="https://www.instagram.com/_zoedoedoe_/">
+                <img src="./asset/image/zzz.jpg">
+            </a>
+        </div>
+        <nav>
+            <div class="ambience">
+                <div class="rain" style="margin-bottom: 25px;">
+                    <i class="fa fa-cloud-rain white"></i>
+                    <audio src="./asset/Ambience/rain sound.mp3" id="rain"></audio>
+                </div>
+                <div class="thunder" style="margin-bottom: 25px;">
+                    <i class="fa-solid fa-cloud-bolt white"></i>
+                    <audio src="./asset/Ambience/thunder.mp3" id="thunder"></audio>
+                </div>
+                <div class="wind" style="margin-bottom: 25px;">
+                    <i class="fa-solid fa-wind white"></i>
+                    <audio src="./asset/Ambience/wind.mp3" id="wind"></audio>
+                </div>
+                <div class="fire" style="margin-bottom: 25px;">
+                    <i class="fa fa-fire white"></i>
+                    <audio src="./asset/Ambience/Fireplace Sounds.mp3" id="fire"></audio>
+                </div>
+                <div class="night" style="margin-bottom: 25px;">
+                    <i class="fa-solid fa-moon white"></i>
+                    <audio src="/asset/Ambience/night.mp3" id="night"></audio>
+                </div>
+                <div class="forest" style="margin-bottom: 25px;">
+                    <i class="fa-solid fa-tree white"></i>
+                    <audio src="./asset/Ambience/forest.mp3" id="forest"></audio>
+                </div>
+                <div class="train" style="margin-bottom: 25px;">
+                    <i class="fa-solid fa-train white"></i>
+                    <audio src="./asset/Ambience/train.mp3" id="train"></audio>
+                </div>
+                <div class="plane" style="margin-bottom: 25px;">
+                    <i class="fa-solid fa-plane white"></i>
+                    <audio src="./asset/Ambience/plane.mp3" id="plane"></audio>
+                </div>
+            </div>     
+        </nav>
+    </aside>
+
+    <section>
+        <div class="search-menu header">
+        </div>
+
+        <div class="main-content">
+            <h2 class="main-content-text">Trap girl playlist, listen when she trapping</h2>
+            <div class="playlist">
+
+            </div>
+        </div>
+    </section>
+    <article>
+        <div class="header"></div>
+        <div class="player">
+            <div class="cd">
+                <div class="cd-thumbnail" style="background-image: url('./assets/img/avt.png');"></div>
+            </div>
+            <div class="playing-song">
+                <h5 class="playing-song-name">TruE</h5>
+                <p class="playing-song-artist"></p>
+            </div>
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+            <div class="controls">
+                <div class="btn btn-repeat">
+                    <i class="fa-solid fa-rotate"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="fa-solid fa-backward"></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class="icon-play fa-solid fa-circle-play"></i>
+                    <i class="icon-pause fa-solid fa-circle-pause"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="icon-next fa-solid fa-forward"></i>
+                </div>
+                <div class="btn btn-shuffle">
+                    <i class="icon-shuffle fa-solid fa-shuffle"></i>
+                </div>
+            </div>
+            <audio id="audio" src=""></audio>
+        </div>
+    </article>
+    <script>
+        //tiếng mưa chill
+        const $$$ = document.querySelector.bind(document);
+        const $$$$ = document.querySelectorAll.bind(document);
+        var rainIcon = $$$('.ambience .rain i')
+        var rainSound = $$$('#rain')
+        var thunderIcon = $$$('.ambience .thunder i')
+        var thunderSound = $$$('#thunder')
+        var windIcon = $$$('.ambience .wind i')
+        var windSound = $$$('#wind')
+        var fireIcon = $$$('.ambience .fire i')
+        var fireSound = $$$('#fire')
+        var nightIcon = $$$('.ambience .night i')
+        var nightSound = $$$('#night')
+        var forestIcon = $$$('.ambience .forest i')
+        var forestSound = $$$('#forest')
+        var trainIcon = $$$('.ambience .train i')
+        var trainSound = $$$('#train')
+        var planeIcon = $$$('.ambience .plane i')
+        var planeSound = $$$('#plane')
+        var heartIcon = $$$('#heart')
+        rainIcon.onclick = function () {
+            if (rainSound.paused) {
+                rainSound.play()
+                rainSound.currentTime = 0;
+                rainIcon.classList.remove('white')
+                rainIcon.classList.add('active')
+            }
+            else {
+                rainSound.pause()
+                rainIcon.classList.remove('active')
+                rainIcon.classList.add('white')
+            }
+        }
+        rainSound.onended = function () {
+            rainSound.currentTime = 0
+            rainSound.play()
+        }
+        thunderIcon.onclick = function () {
+            if (thunderSound.paused) {
+                thunderSound.play()
+                thunderSound.currentTime = 0;
+                thunderIcon.classList.remove('white')
+                thunderIcon.classList.add('active')
+            }
+            else {
+                thunderSound.pause()
+                thunderIcon.classList.remove('active')
+                thunderIcon.classList.add('white')
+            }
+
+        }
+        thunderSound.onended = function () {
+            thunderSound.currentTime = 0
+            thunderSound.play()
+        }
+        windIcon.onclick = function () {
+            if (windSound.paused) {
+                windSound.play()
+                windSound.currentTime = 0;
+                windIcon.classList.remove('white')
+                windIcon.classList.add('active')
+            }
+            else {
+                windSound.pause()
+                windIcon.classList.remove('active')
+                windIcon.classList.add('white')
+            }
+        }
+        windSound.onended = function () {
+            windSound.currentTime = 0
+            windSound.play()
+        }
+        fireIcon.onclick = function () {
+            if (fireSound.paused) {
+                fireSound.play()
+                fireSound.currentTime = 0;
+                fireIcon.classList.remove('white')
+                fireIcon.classList.add('active')
+            }
+            else {
+                fireSound.pause()
+                fireIcon.classList.remove('active')
+                fireIcon.classList.add('white')
+            }
+        }
+        fireSound.onended = function () {
+            fireSound.currentTime = 0
+            fireSound.play()
+        }
+        nightIcon.onclick = function () {
+            if (nightSound.paused) {
+                nightSound.play()
+                nightSound.currentTime = 0;
+                nightIcon.classList.remove('white')
+                nightIcon.classList.add('active')
+            }
+            else {
+                nightSound.pause()
+                nightIcon.classList.remove('active')
+                nightIcon.classList.add('white')
+            }
+        }
+        nightSound.onended = function () {
+            nightSound.currentTime = 0
+            nightSound.play()
+        }
+        forestIcon.onclick = function () {
+            if (forestSound.paused) {
+                forestSound.play()
+                forestSound.currentTime = 0;
+                forestIcon.classList.remove('white')
+                forestIcon.classList.add('active')
+            }
+            else {
+                forestSound.pause()
+                forestIcon.classList.remove('active')
+                forestIcon.classList.add('white')
+            }
+        }
+        forestSound.onended = function () {
+            forestSound.currentTime = 0
+            forestSound.play()
+        }
+        trainIcon.onclick = function () {
+            if (trainSound.paused) {
+                trainSound.play()
+                trainSound.currentTime = 0;
+                trainIcon.classList.remove('white')
+                trainIcon.classList.add('active')
+            }
+            else {
+                trainSound.pause()
+                trainIcon.classList.remove('active')
+                trainIcon.classList.add('white')
+            }
+        }
+        trainSound.onended = function () {
+            trainSound.currentTime = 0
+            trainSound.play()
+        }
+        planeIcon.onclick = function () {
+            if (planeSound.paused) {
+                planeSound.play()
+                planeSound.currentTime = 0;
+                planeIcon.classList.remove('white')
+                planeIcon.classList.add('active')
+            }
+            else {
+                planeSound.pause()
+                planeIcon.classList.remove('active')
+                planeIcon.classList.add('white')
+            }
+        }
+        planeSound.onended = function () {
+            planeSound.currentTime = 0
+            planeSound.play()
+        }
+        heartIcon.onclick = function () {
+            if (heartIcon.classList.contains('active')) {
+                heartIcon.classList.remove('active')
+            }
+            else {
+                heartIcon.classList.add('active')
+                alert('Long chưa phát triển đến đây đâu, chịu khó đợi xíu hehe')
+            }
+        }
+
+
+    </script>
+    <script src="./main.js"></script>
+    
+</body>
+</html>
