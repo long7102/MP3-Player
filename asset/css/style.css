@@ -309,10 +309,9 @@ article {
             display: none;
         }
         .ambience {
-            width: 100%;
             margin-top: 30px;
             margin-bottom: 20px;
-            margin-left: 50px;
+            margin-left: 40px;
             display: flex;
         }
         .ambience i{
@@ -326,7 +325,7 @@ article {
     section {
         order: 1;
         left: 0;
-        width: 85%;
+        width: 100%;
         align-self: center;
     }
     .search-menu {
