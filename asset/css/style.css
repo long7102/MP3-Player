@@ -249,6 +249,8 @@ article {
 #progress {
     margin-top: 0.4rem;
     width: 70%;
+    appearance: none;
+
     -webkit-appearance: none;
     height: 6px;
     background: #ffffff;
@@ -297,7 +299,7 @@ article {
 }
 
 .song-favorite.fa-solid {
-    color: #ff3c63;
+    color: #720e9e;
 }
 
 @media (max-width: 64em) {
@@ -310,11 +312,10 @@ article {
         .ambience {
             margin-top: 30px;
             margin-bottom: 20px;
-            margin-left: 40px;
             display: flex;
         }
         .ambience i{
-            margin: 0 14px;
+            margin: 0 12px;
         }
     }
     body {

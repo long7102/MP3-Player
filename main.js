@@ -1,5 +1,7 @@
 var intro = "Thông báo này chỉ hiển thị lần đầu tiên thôi, nói chung là tôi cũng cố hết sức rồi mặc dù mình chưa thân nhau lắm nhưng mà tôi đã làm z rồi (thói quen) hihi không sao, nói chung là hãy vui vẻ khi nghe nhạc, và nhớ rằng ngoài kia luôn có người yêu thương bạn vô điều kiện nhé. Dù sau này có thể mình thành người lạ nhưng mà hãy nhớ là mình từng cười rất tươi khi nói chuyện với nhau. Trong quá trình sử dụng nếu có lỗi gì thì bảo tôi để tôi fix. From NVL with 3 day hard working >3"
+var intro2 = "Những bài hát tôi thêm vào sẽ bị gỡ ra nếu bạn muốn, ngoài ra còn 1 số tiểu tiết tôi thêm vào, mình tự tìm hiểu nhé, have fun :)"
 alert(intro)
+alert(intro2)
 // bind querySelector
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
@@ -201,10 +203,16 @@ const app = {
             image: "./asset/author/author.jpg"
         },
         {
-            name: "Bài này anh Long tặng",
+            name: "Song that I chose for you.",
             singer: "Sát thủ vô tình",
             path: "./asset/music/Caravan Palace  Lone Digger Album version.mp3",
-            image: "https://scontent.fhan18-1.fna.fbcdn.net/v/t39.30808-6/435893515_1628860587888109_7338248842769212639_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=669761&_nc_ohc=tN2Svv3xh1wQ7kNvgFi8Ujv&_nc_ht=scontent.fhan18-1.fna&oh=00_AYBMPNIeyOuqIKMMr8E7pV-vs1c5IXsCgC5nW-hwFvod8Q&oe=66869F89"
+            image: "./asset/image/long.jpg"
+        },
+        {
+            name: "Song that you gonna like",
+            singer: "Sát thủ vô tình",
+            path: "./asset/music/Pumped Up Kicks.mp3",
+            image: "./asset/image/433476422_1619992155441619_932794865641942996_n.jpg"
         },
         {
             name: "Song that remind me of you",
