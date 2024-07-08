@@ -14,12 +14,15 @@
 </head>
 
 <body>
-    <div class="volume">
-        <i class="fa-solid fa-volume-high" id="muted"></i>
-        <br>
-        <i class="fa-solid fa-eye" id="display"></i>
-    </div>
-    <div class="main">       
+
+    <div class="main">    
+        <div class="volume">
+            <i class="fa-solid fa-volume-high" id="muted"></i>
+            <br>
+            <i class="fa-solid fa-eye" id="display"></i>
+            <br>
+            <i class="fa-solid fa-pause-circle" id="pause"></i>
+        </div>   
         <video autoplay loop class="video-background">
             <source src="./ok.mp4">
         </video>
@@ -97,6 +100,19 @@ display.onclick = function(){
         display.classList.remove('fa-eye-slash')
         display.classList.add('fa-eye')
         form.style.display = 'block'
+    }
+}
+const pause = document.getElementById('pause')
+pause.onclick = function(){
+    if(video.paused) {
+        video.play()
+        pause.classList.add('fa-pause-circle')
+        pause.classList.remove('fa-play')
+    }
+    else{
+        video.pause()
+        pause.classList.remove('fa-pause-circle')
+        pause.classList.add('fa-play')
     }
 }
 function showPassword() {
