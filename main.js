@@ -218,7 +218,7 @@ const app = {
             name: "Song that remind me of you",
             singer: "Sói già cô đơn",
             path: "./asset/music/Eyes Without A Face.mp3",
-            image: "./asset/image/370540591_826615952248346_6798317895543651133_n.jpg"
+            image: "./asset/image/6fbc84e6-ce8a-498a-b722-2eaaf9f52f0c.jpg"
         },
         {
             name: "Song that i like",
