@@ -21,10 +21,10 @@
             <br>
             <i class="fa-solid fa-eye" id="display"></i>
             <br>
-            <i class="fa-solid fa-pause-circle" id="pause"></i>
+            <i class="fa-solid fa-play" id="play"></i>
         </div>   
-        <video autoplay loop class="video-background">
-            <source src="./ok.mp4">
+        <video autoplay loop playsinline class="video-background">
+            <source src="./ok.mp4" type="video/mp4">
         </video>
         <form class="form" id="form-1">
             <h3 class="heading">Chào người may mắn nhất hôm nay</h3>
@@ -68,6 +68,7 @@
     errorMessage.style.display = "block";
   }
 }
+
 const video = document.querySelector('.video-background')
 const muted = document.getElementById('muted')
 video.controls = false
@@ -101,22 +102,19 @@ display.onclick = function(){
         form.style.display = 'block'
     }
 }
-const pause = document.getElementById('pause')
+const play = document.getElementById('play');
+    play.onclick = function () {
+        if (video.paused) {
+            video.play();
+            play.classList.remove('fa-play');
+            play.classList.add('fa-pause-circle');
+        } else {
+            video.pause();
+            play.classList.remove('fa-pause-circle');
+            play.classList.add('fa-play');
+        }
+    };
 
-pause.onclick = function(){
-    if(video.paused) {
-        video.controls = false
-        video.play()
-        pause.classList.add('fa-pause-circle')
-        pause.classList.remove('fa-play')
-    }
-    else{
-        video.controls = false
-        video.pause()
-        pause.classList.remove('fa-pause-circle')
-        pause.classList.add('fa-play')
-    }
-}
 function showPassword() {
     const password = document.getElementById("password");
     if (password.type === "password") {
