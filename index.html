@@ -57,7 +57,6 @@
     function validateForm() {
   const username = document.getElementById("fullname").value;
   const password = document.getElementById("password").value;
-
   if (username === "mai" && password === "29042005") {
     // Chuyển sang trang tiếp theo
     alert("Đúng trap girl rồi hehe, chuẩn bị đến với bất ngờ nè");
@@ -105,12 +104,15 @@ display.onclick = function(){
 const pause = document.getElementById('pause')
 pause.onclick = function(){
     if(video.paused) {
+        video.controls = false
         video.play()
         pause.classList.add('fa-pause-circle')
         pause.classList.remove('fa-play')
     }
     else{
         video.pause()
+        video.controls = false
+
         pause.classList.remove('fa-pause-circle')
         pause.classList.add('fa-play')
     }
