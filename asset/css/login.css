@@ -17,23 +17,28 @@
   }
   @media (max-width: 64em) {
     .volume{
+      margin-top: 30px;
       justify-content: space-around;
       width: 100%;
       display: flex;
-      top: 12px;
       left: 0;
+      right: 0;
     }
     .volume i{
-      margin-left: 25px;
+      margin-left: 20px;
+      margin-bottom: 1px;
+    }
+    .volume i:first-child{
+      margin-left: 0px;
     }
     .form{
-      margin: 40px 0px 0px 0px;
+      margin: 20px 0px 0px 0px;
       height: 400px;
     }
   }
   .volume i{
     font-size: 40px;
-    margin-bottom: 25px;
+    margin-bottom: 10px;
     cursor: pointer;
   }
   .main {
@@ -50,7 +55,7 @@
     z-index: 7;
     width: 500px;
     height: 450px;
-    min-height: 270px;
+    min-height: 300px;
     padding: 32px 27px;
     text-align: center;
     background-color: rgba(231, 215, 215, 0);
@@ -86,7 +91,6 @@
     margin-top: 16px;
     font-weight: 300;
   }
-  
   .form-group {
     display: flex;
     margin-bottom: 16px;
@@ -144,7 +148,6 @@
     font-size: 14px;
     border-radius: 8px;
     cursor: pointer;
-    
   }
   
   .form-submit:hover {

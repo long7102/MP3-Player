@@ -23,7 +23,7 @@
             <br>
             <i class="fa-solid fa-play" id="play"></i>
         </div>   
-        <video autoplay loop playsinline class="video-background">
+        <video loop={true} autoplay={true} playsinline={true} class="video-background">
             <source src="./ok.mp4" type="video/mp4">
         </video>
         <form class="form" id="form-1">
@@ -41,7 +41,7 @@
             </div>
             <div style="display: flex">
                 <input type="checkbox" placeholder="" class="custom-checkbox" onclick="showPassword()">  
-                 <p style="color: white; 
+                 <p style="color:#720e9e; 
                  margin-left: 10px;
                  text-align: center;
                  font-size: 1.4rem;
@@ -54,6 +54,7 @@
     </div>
 </body>
 <script>
+    alert("Button said: Click on me Mai ")
     function validateForm() {
   const username = document.getElementById("fullname").value;
   const password = document.getElementById("password").value;
