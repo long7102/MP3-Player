@@ -15,6 +15,9 @@
     left: 25px;
     color: whitesmoke;
   }
+.volume i{
+    opacity: 0.7;
+}
   .volume i:last-child{
     margin-left: 5px;
   }
