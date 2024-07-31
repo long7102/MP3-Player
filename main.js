@@ -1,7 +1,6 @@
-var intro = "Thông báo này chỉ hiển thị lần đầu tiên thôi, nói chung là tôi cũng cố hết sức rồi mặc dù mình chưa thân nhau lắm nhưng mà tôi đã làm z rồi (thói quen) hihi không sao, nói chung là hãy vui vẻ khi nghe nhạc, và nhớ rằng ngoài kia luôn có người yêu thương bạn vô điều kiện nhé. Dù sau này có thể mình thành người lạ nhưng mà hãy nhớ là mình từng cười rất tươi khi nói chuyện với nhau. Trong quá trình sử dụng nếu có lỗi gì thì bảo tôi để tôi fix. From NVL with 3 day hard working >3"
-var intro2 = "Những bài hát tôi thêm vào sẽ bị gỡ ra nếu bạn muốn, ngoài ra còn 1 số tiểu tiết tôi thêm vào, mình tự tìm hiểu nhé, have fun :)"
+var intro = "Chào em, cô gái xinh đẹp nóng bỏng mà anh quen. Hôm nay em đã cười chưa"
 alert(intro)
-alert(intro2)
+
 // bind querySelector
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
