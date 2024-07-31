@@ -249,7 +249,9 @@ const app = {
 
                 <div class="song-contain song-select">
                     <div>
-                        <i class="song-favorite-${index} btn song-favorite fa-regular fa-heart" onclick="handleFavorite(event)"></i>                    </div>
+                        <i class="song-favorite-${index} btn song-favorite fa-regular fa-heart" onclick="handleFavorite(event)"></i> 
+                        <i class="btn song-remove-${index} fa-solid fa-xmark" onclick="handleRemove(event)"></i>
+                    </div>
                 </div>
             </div>
             `
