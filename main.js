@@ -33,197 +33,286 @@ const app = {
 
     songs: [
         {
-            name: "Vườn Sao Băng (feat. puppy & JayKem)",
+            name: "Vườn Sao Băng",
             singer: "puppy & JayKem",
             path: "./asset/music/puppy  JayKem  Vườn Sao Băng ft FOWLEX Snowz  Official Lyrics Video.mp3",
-            image: "./asset/author/author.jpg"
+            image: "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/04/76/6d/04766dde-a26e-876d-07bd-4c0c12c07376/artwork.jpg/1200x1200bf-60.jpg",
+            isFavorite: false
+
         },
         {
             name: "Rơi vào hoàng hôn",
             singer: "‪@2imphuoc",
             path: "./asset/music/2imphuoc  RƠI VÀO HOÀNG HÔN Prod COAST MUSIC.mp3",
-            image: "./asset/author/author 2.jpg"
+            image: "https://photo-resize-zmp3.zadn.vn/w600_r1x1_jpeg/cover/b/f/6/d/bf6dc9e42ca62045a288828677e17f29.jpg",
+            isFavorite: false
         },
         {
             name: "Butterflies",
             singer: "Normandie",
             path: "./asset/music/Normandie  Butterflies Official Video.mp3",
-            image: "./asset/author/author.jpg"
+            image: "https://images.genius.com/e53f29a2d523d78ec6cf74137b615a01.1000x1000x1.jpg",
+            isFavorite: false,
         },
         {
             name: "Babylon",
             singer: "Normandie",
             path: "./asset/music/Normandie  Babylon Official Audio Stream.mp3",
-            image: "./asset/author/author.jpg"
+            image: "https://i.ytimg.com/vi/1STMdBRxDmQ/maxresdefault.jpg",
+            isFavorite: false
         },
         {
             name: "Candy",
             singer: "Doja Cat",
             path: "./asset/music/Doja Cat  Candy Audio.mp3",
-            image: "./asset/author/author.jpg"
+            image: "https://i1.sndcdn.com/artworks-000521778090-l1mdj3-t500x500.jpg",
+            isFavorite: false
         },
         {
             name: "older",
             singer: "Isabel LaRosa",
             path: "./asset/music/Isabel LaRosa  older Lyrics.mp3",
-            image: "./asset/author/author.jpg"
+            image: "https://i1.sndcdn.com/artworks-37zshbv2zv1t1xEK-JNnzWA-t500x500.jpg",
+            isFavorite: false
         },
         {
             name: "favorite",
             singer: "Isabel LaRosa",
             path: "./asset/music/Isabel LaRosa  favorite Lyric Video.mp3",
-            image: "./asset/author/author.jpg"
+            image: "https://i1.sndcdn.com/artworks-37zshbv2zv1t1xEK-JNnzWA-t500x500.jpg",
+            isFavorite: false
         },
         {
             name: "DEATH",
             singer: "Melanie Martinez",
             path: "./asset/music/Melanie Martinez  DEATH Lyrics.mp3",
-            image: "./asset/author/author.jpg"
+            image: "https://i9.ytimg.com/s_p/OLAK5uy_lWz191CuKFCKMG2081fWGOGKFgm1zGCgg/maxresdefault.jpg?sqp=CISnq7UGir7X7AMICM62nLUGEAE=&rs=AOn4CLC6gIVOfLBJEXnDeIIb6foJSgub9Q&v=1722227534",
+            isFavorite: false
         },
         {
             name: "em",
             singer: "mer",
             path: "./asset/music/mer  em.mp3",
-            image: "./asset/author/author.jpg"
+            image: "https://photo-zmp3.zadn.vn/avatars/a/0/e/e/a0eea24fb8dafb5cae3be2e259e64eec.jpg",
+            isFavorite: false
         },
         {
             name: "lơ mơ",
             singer: "mer",
             path: "./asset/music/lơ mơ  mer.mp3",
-            image: "./asset/author/author.jpg"
+            image: "https://photo-zmp3.zadn.vn/avatars/a/0/e/e/a0eea24fb8dafb5cae3be2e259e64eec.jpg",
+            isFavorite: false
         },
         {
             name: "Be Broken",
             singer: "Shayda",
             path: "./asset/music/Be Broken  Shayda FtGimi.mp3",
-            image: "./asset/author/author.jpg"
+            image: "./asset/author/shayda.jpg",
+            isFavorite: false
         },
         {
             name: "iu bạn mình ",
             singer: "Shayda",
             path: "./asset/music/iu bạn mình  Shayda Ft Gimi.mp3",
-            image: "./asset/author/author.jpg"
+            image: "./asset/author/shayda.jpg",
+            isFavorite: false
         },
         {
             name: "Take Me Away",
             singer: "Christina Vidal",
             path: "./asset/music/Christina Vidal  Take Me Away.mp3",
-            image: "./asset/author/author.jpg"
+            image: "https://m.media-amazon.com/images/M/MV5BMTYxOTE1NzM2M15BMl5BanBnXkFtZTYwNTg4MzQ1._V1_FMjpg_UX1000_.jpg",
+            isFavorite: false
         },
         {
             name: "Duality",
             singer: "Skipnot",
             path: "./asset/music/Slipknot  Duality  HQ  Lyrics.mp3",
-            image: "./asset/author/author.jpg"
+            image: "https://images.radiobob.de/files/media/image/file/bob_slipknot_16-9_1.jpg?rect=center%2Cmiddle%2C1080%2C1080",
+            isFavorite: false
         },
         {
             name: "Smells Like Teen Spirit",
             singer: "Nirvana",
             path: "./asset/music/Nirvana  Smells Like Teen Spirit Lyrics.mp3",
-            image: "./asset/author/author.jpg"
+            image: "https://www.nirvana.com/files/2023/10/Nevermind-compressed.jpg",
+            isFavorite: false
         },
         {
             name: "Gorillaz ",
             singer: "Clint Eastwood",
             path: "./asset/music/Clint Eastwood.mp3",
-            image: "./asset/author/author.jpg"
+            image: "https://vcdn1-giaitri.vnecdn.net/2021/09/18/Clint-Eastwood-The-Good-The-Bad-and-The-Ugly-1631939528.jpg?w=460&h=0&q=100&dpr=2&fit=crop&s=C3V5qO9e_hiTM4_5uKSSag",
+            isFavorite: false
         },
         {
             name: "nữ siêu anh hùng",
             singer: "tlinh",
             path: "./asset/music/tlinh  nữ siêu anh hùng  OFFICIAL MUSIC VIDEO.mp3",
-            image: "./asset/author/author.jpg"
+            image: "https://vcdn1-giaitri.vnecdn.net/2022/02/08/thao-linh-jpeg-1644313181-2294-1644314017.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=zUwYLKE1lqSsl-q5y7qskw",
+            isFavorite: false
         },{
             name: "nếu lúc đó",
             singer: "tlinh",
             path: "./asset/music/tlinh  nếu lúc đó ft 2pillz  OFFICIAL MUSIC VIDEO.mp3",
-            image: "./asset/author/author.jpg"
+            image: "https://vcdn1-giaitri.vnecdn.net/2022/02/08/thao-linh-jpeg-1644313181-2294-1644314017.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=zUwYLKE1lqSsl-q5y7qskw",
+            isFavorite: false
         },
         {
             name: "Rebound",
             singer: "tlinh",
             path: "./asset/music/TGSN  Rebound feat Tlinh  Official Visualizer.mp3",
-            image: "./asset/author/author.jpg"
+            image: "https://vcdn1-giaitri.vnecdn.net/2022/02/08/thao-linh-jpeg-1644313181-2294-1644314017.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=zUwYLKE1lqSsl-q5y7qskw",
+            isFavorite: false
         },
         {
             name: "Cuốn cho nhau 1 điếu",
             singer: "tlinh",
             path: "./asset/music/Cuốn cho nhau 1 điếu  Tlinh  remake  Lyrics.mp3",
-            image: "./asset/author/author 2.jpg"
+            image: "https://vcdn1-giaitri.vnecdn.net/2022/02/08/thao-linh-jpeg-1644313181-2294-1644314017.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=zUwYLKE1lqSsl-q5y7qskw",
+            isFavorite: false
         },
         {
             name: "PHI TIÊU",
             singer: "LEFT HAND",
             path: "./asset/music/PHI TIÊU  LEFT HAND Official Music Video.mp3",
-            image: "./asset/author/author.jpg"
+            image: "https://vcdn1-giaitri.vnecdn.net/2022/02/08/thao-linh-jpeg-1644313181-2294-1644314017.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=zUwYLKE1lqSsl-q5y7qskw",
+            isFavorite: false
         },
         {
             name: "PHONG",
             singer: "VSTRA",
             path: "./asset/music",
-            image: "./asset/author/author.jpg"
+            image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRpOQsl2_69YLNUR-AHssTWAjQdqW1GpEGmuw&s",
+            isFavorite: false
         },
         {
             name: "She Said",
             singer: "WEAN",
             path: "./asset/music/WEAN  She Said  Official Lyrics Video  ft NAOMI.mp3",
-            image: "./asset/author/author.jpg"
+            image: "https://mamnonanhduongvt.edu.vn/wp-content/uploads/2022/11/202010060333546371-c5f5d7c4-fc20-4e31-82b0-78237bdb620c.png",
+            isFavorite: false
         },
 
         {
             name: "HONGKONG1 (remake)",
             singer: "52HZ",
             path: "./asset/music/HONGKONG1 remake  52HZ high quality.mp3",
-            image: "./asset/author/author.jpg"
+            image: "https://media.viez.vn/prod/2023/5/1/IMG_0876_e6323e0717.PNG",
+            isFavorite: false
         },
 
         {
             name: "Muốn anh Long đau",
             singer: "Winno ft Vlong",
             path: "./asset/music/Winno  Muốn anh đau ft Hustlang Robber  TO LOVE AND BE LOVED Album.mp3",
-            image: "./asset/author/author 2.jpg"
+            image: "./asset/image/long.jpg",
+            isFavorite: false
         },
         {
             name: " Hello Kitty",
             singer: "Avril Lavigne ",
             path: "./asset/music/Avril Lavigne  Hello Kitty Lyrics.mp3",
-            image: "./asset/author/author.jpg"
+            image: "https://source.boomplaymusic.com/group10/M00/12/11/9e505773957e461489b5c5195b19fb45_464_464.jpg",
+            isFavorite: false
         },
         {
             name: "Criminal",
             singer: "Britney Spears",
             path: "./asset/music/Britney Spears  Criminal Lyrics.mp3",
-            image: "./asset/author/author.jpg"
+            image: "https://phunuvietnam.mediacdn.vn/thumb_w/700/179072216278405120/2024/4/19/quotenguoi-dan-ba-trong-toi-17134906859421847163240-71-1475-749-2560-crop-1713490710352831129787.jpg",
+            isFavorite: false
         },
         {
             name: "Obsessed",
             singer: "Mariah Carey",
             path: "./asset/music/Mariah Carey   Obsessed Lyrics.mp3",
-            image: "./asset/author/author.jpg"
+            image: "https://cdn.britannica.com/13/238513-050-98B05E9E/Mariah-Carey-American-pop-singer-2019.jpg",
+            isFavorite: false
+        },
+        {
+            name: "Make me wanna die",
+            singer: "The pretty reckless",
+            path: "./asset/music/The Pretty Reckless  Make Me Wanna Die Lyrics.mp3",
+            image: "https://upload.wikimedia.org/wikipedia/commons/0/03/The_Pretty_Reckless_Rockfest_2017_3.jpg",
+            isFavorite: false
+        },
+        {
+            name: "Just tonight",
+            singer: "The pretty reckless",
+            path: "./asset/music/The Pretty Reckless  Just Tonight Official Music Video.mp3",
+            image: "https://upload.wikimedia.org/wikipedia/commons/0/03/The_Pretty_Reckless_Rockfest_2017_3.jpg",
+            isFavorite: false
+        },
+        {
+            name: "Kill me",
+            singer: "The pretty reckless",
+            path: "./asset/music/The Pretty Reckless  Kill Me FULL VERSION.mp3",
+            image: "https://upload.wikimedia.org/wikipedia/commons/0/03/The_Pretty_Reckless_Rockfest_2017_3.jpg",
+            isFavorite: false
+        },
+        {
+            name: "Witches burn",
+            singer: "The pretty reckless",
+            path: "./asset/music/The Pretty Reckless  Witches Burn.mp3",
+            image: "https://upload.wikimedia.org/wikipedia/commons/0/03/The_Pretty_Reckless_Rockfest_2017_3.jpg",
+            isFavorite: false
+        },
+        {
+            name: "Diorama",
+            singer: "Yves",
+            path: "./asset/music/DIORAMA Yves.mp3",
+            image: "https://images.genius.com/3459329ea1a364d0403881f2fc8f956d.1000x1000x1.png",
+            isFavorite: false
+        },
+        {
+            name: "Rối ren",
+            singer: "Truant Fu",
+            path: "./asset/music/Truant Fu  Rối Ren Eh eh Official Music Video.mp3",
+            image: "https://i.ytimg.com/vi/VveWMtbKXGU/0.jpg",
+            isFavorite: false
+        },
+        {
+            name: "Runaway",
+            singer: "Truant Fu",
+            path: "./asset/music",
+            image: "https://photo-resize-zmp3.zadn.vn/w600_r1x1_jpeg/cover/d/3/6/d/d36dc73c987a570d29f05fe712eb5c44.jpg",
+            isFavorite: false
+        },
+        {
+            name: "Feel Good",
+            singer: "gorillaz ",
+            path: "./asset/music/Gorillaz  Feel Good Inc Official Video.mp3",
+            image: "https://i1.sndcdn.com/artworks-000498993117-tfcwb6-t500x500.jpg",
+            isFavorite: false
         },
         {
             name: "Song that I chose for you.",
             singer: "Sát thủ vô tình",
             path: "./asset/music/Caravan Palace  Lone Digger Album version.mp3",
-            image: "./asset/image/long.jpg"
+            image: "./asset/image/long.jpg",
+            isFavorite: false
         },
         {
             name: "Song that you gonna like",
             singer: "Sát thủ vô tình",
             path: "./asset/music/Pumped Up Kicks.mp3",
-            image: "./asset/image/433476422_1619992155441619_932794865641942996_n.jpg"
+            image: "./asset/image/433476422_1619992155441619_932794865641942996_n.jpg",
+            isFavorite: false
         },
         {
             name: "Song that remind me of you",
             singer: "Sói già cô đơn",
             path: "./asset/music/Eyes Without A Face.mp3",
-            image: "./asset/image/6fbc84e6-ce8a-498a-b722-2eaaf9f52f0c.jpg"
+            image: "./asset/image/6fbc84e6-ce8a-498a-b722-2eaaf9f52f0c.jpg",
+            isFavorite: false
         },
         {
             name: "Song that i like",
             singer: "Zoe aka Girl with 1000 names",
             path: "./asset/music/laugh.mp3",
-            image: "./asset/image/icon.jpg"
+            image: "./asset/image/icon.jpg",
+            isFavorite: false
         },
     ],
 
