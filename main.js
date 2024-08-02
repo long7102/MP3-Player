@@ -275,7 +275,7 @@ const app = {
         {
             name: "Runaway",
             singer: "Truant Fu",
-            path: "./asset/music",
+            path: "./asset/music/Truant Fu  RUNAWAY Official Music Video.mp3",
             image: "https://photo-resize-zmp3.zadn.vn/w600_r1x1_jpeg/cover/d/3/6/d/d36dc73c987a570d29f05fe712eb5c44.jpg",
             isFavorite: false
         },
@@ -294,24 +294,10 @@ const app = {
             isFavorite: false
         },
         {
-            name: "Song that you gonna like",
-            singer: "Sát thủ vô tình",
-            path: "./asset/music/Pumped Up Kicks.mp3",
-            image: "./asset/image/433476422_1619992155441619_932794865641942996_n.jpg",
-            isFavorite: false
-        },
-        {
             name: "Song that remind me of you",
             singer: "Sói già cô đơn",
             path: "./asset/music/Eyes Without A Face.mp3",
             image: "./asset/image/6fbc84e6-ce8a-498a-b722-2eaaf9f52f0c.jpg",
-            isFavorite: false
-        },
-        {
-            name: "Song that i like",
-            singer: "Zoe aka Girl with 1000 names",
-            path: "./asset/music/laugh.mp3",
-            image: "./asset/image/icon.jpg",
             isFavorite: false
         },
     ],
